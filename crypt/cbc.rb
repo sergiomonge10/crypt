@@ -27,7 +27,10 @@ module CBC
     # Cypher-block-chain mode
     
     initVector = generate_initialization_vector(block_size() / 4)
+    console = Logger.new("sergio.txt")
+    console.info(initVector)
     chain = encrypt_block(initVector)
+    console.info(chain)
     cryptStream.write(chain)
 
     while ((block = plainStream.read(block_size())) && (block.length == block_size()))
