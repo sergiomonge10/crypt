@@ -27,6 +27,7 @@ required_ruby_version: !ruby/object:Gem::Version::Requirement
         version: 0.0.0
   version:
 platform: ruby
+cert_chain: []
 authors:
   - Richard Kernahan
 files:
@@ -50,4 +51,4 @@ executables: []
 extensions: []
 requirements: []
 dependencies: []
-cert_chain: []
+
